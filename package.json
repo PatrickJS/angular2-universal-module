@@ -4,6 +4,12 @@
   "description": "Example of an Angular 2 Universal module by @AngularClass",
   "main": "dist/node/index.js",
   "browser": "dist/browser/index.js",
+  "files": [
+    "src",
+    "dist",
+    "polyfills.js",
+    "global.js"
+  ],
   "scripts": {
     "watch": "tsc --watch",
     "prebuild": "rimraf dist",
