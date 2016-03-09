@@ -1,0 +1,32 @@
+{
+  "name": "angular2-universal-module",
+  "version": "0.0.0",
+  "description": "Example of an Angular 2 Universal module by @AngularClass",
+  "main": "dist/node/index.js",
+  "browser": "dist/browser/index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts",
+    "test": "npm run lint",
+    "start": "npm run build",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdi2290/angular2-universal-module.git"
+  },
+  "author": "Partick Stapleton <github@gdi2290.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gdi2290/angular2-universal-module/issues"
+  },
+  "homepage": "https://github.com/gdi2290/angular2-universal-module#readme",
+  "devDependencies": {
+    "rimraf": "^2.5.2",
+    "tslint": "^3.5.0",
+    "typescript": "^1.8.7",
+    "typings": "^0.7.5"
+  }
+}
